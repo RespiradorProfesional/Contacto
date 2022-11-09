@@ -1,0 +1,146 @@
+:root {
+  --blanco: #ffffff;
+  --negro: #000000;
+  --blanquito: #b0b0b0ff;
+  --medio: #999999ff;
+  --mediooscuro: rgb(66, 66, 66);
+  --oscuro: rgb(35, 35, 35);
+}
+
+.linea {
+  background-color: var(--oscuro);
+  width: 100%;
+  height: 2rem;
+}
+
+body {
+  margin: auto;
+}
+/*menu*/
+
+.menu {
+  background-color: var(--mediooscuro);
+  position: fixed; /* me corrige la posicion y el background lo reduce a las palabras*/
+  display: flex;
+  right: 16px; /*te lo pone a la derecha */
+  font-size: 20px;
+  border-radius: 1rem;
+  z-index: 100; /*encima e los elementos de la pagina*/
+}
+
+.menu a {
+  padding: 0.7rem;
+  text-decoration: none;
+  color: var(--blanquito);
+}
+
+.menu a:hover {
+  background-color: var(--negro);
+  color: var(--blanco);
+  border-radius: 1rem;
+}
+
+h2 {
+  margin: 7rem;
+  font-size: 7rem;
+  font-family: "Freehand", cursive;
+  font-weight: 100;
+  transition: all 0.9s ease-in;
+  width: 27%;
+}
+
+h2:hover {
+  border-style: solid;
+}
+
+p {
+  font-style: oblique;
+  transition: all 0.4s linear;
+}
+
+p:hover {
+  transform: scale(1.3);
+}
+
+.caja1 {
+  width: 11%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+  margin-left: 10rem;
+}
+
+.caja2 {
+  width: 11%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+  margin-left: 20rem;
+  margin-bottom: 2rem;
+}
+
+.gmail {
+  margin: auto;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  text-align: center;
+}
+
+.gmail p {
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.gmail img {
+  height: 150px;
+  width: 200px;
+}
+
+.imagen {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(https://wallpapercave.com/wp/wp5342210.jpg);
+  padding: 24%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*formulario*/
+
+h1 {
+  color: var(--blanco);
+}
+
+.formulario {
+  width: min (60rem, 100%);
+  margin: 0 auto;
+}
+
+.campo {
+  margin-top: 4rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.campo textarea {
+  height: 100px;
+  width: 300px;
+}
+
+.campo label {
+  display: grid;
+  font-size: 3rem;
+}
+
+.mensaje {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.mensaje input {
+  color: var(--blanco);
+  background-color: var(--blanquito);
+  border-radius: 2rem;
+  font-size: 1rem;
+}
